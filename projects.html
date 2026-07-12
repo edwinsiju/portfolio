@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Clement Benny</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       /* ===========================
+   PROJECTS PAGE
+=========================== */
+
+.showroom-grid{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    margin-top:50px;
+}
+
+.project-showcase{
+
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:40px;
+
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.project-showcase::before{
+
+    content:'';
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    background:rgba(108,99,255,.08);
+
+    border-radius:50%;
+
+    top:-80px;
+    right:-80px;
+
+}
+
+.project-showcase:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 30px 60px rgba(108,99,255,.15);
+
+}
+
+.project-meta{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.project-meta h3{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:12px;
+
+}
+
+.project-stack{
+
+    display:inline-block;
+
+    width:fit-content;
+
+    padding:8px 18px;
+
+    background:#ecebff;
+
+    color:#6c63ff;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+
+.project-description{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+.feature-panel{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+    border-left:6px solid #6c63ff;
+
+}
+
+.feature-panel h4{
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+    color:#222;
+
+    font-weight:700;
+
+}
+
+.feature-list{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.feature-list li{
+
+    position:relative;
+
+    padding:14px 0 14px 35px;
+
+    border-bottom:1px solid #f0f0f0;
+
+    color:#555;
+
+    transition:.3s;
+
+}
+
+.feature-list li:last-child{
+
+    border:none;
+
+}
+
+.feature-list li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    top:12px;
+
+    width:24px;
+
+    height:24px;
+
+    background:#6c63ff;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.feature-list li:hover{
+
+    color:#6c63ff;
+
+    padding-left:42px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+    color:#222;
+
+}
+
+.section-title::after{
+
+    content:'';
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#6c63ff;
+
+    margin:15px auto 0;
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.project-showcase{
+
+grid-template-columns:1fr;
+
+padding:30px;
+
+gap:30px;
+
+}
+
+.project-meta h3{
+
+font-size:30px;
+
+}
+
+.section-title{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.project-showcase{
+
+padding:25px;
+
+}
+
+.project-meta h3{
+
+font-size:26px;
+
+}
+
+.project-description{
+
+font-size:16px;
+
+}
+
+.feature-panel{
+
+padding:25px;
+
+}
+
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Edwin Siju</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container section">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="showroom-grid">
+
+    <!-- Project 1 -->
+    <div class="project-showcase">
+
+        <div class="project-meta">
+            <h3>Online Jersey Store</h3>
+
+            <div class="project-stack">
+                PHP / MySQL / HTML / CSS / JavaScript / Bootstrap
+            </div>
+
+            <p class="project-description">
+                An e-commerce web application developed for purchasing sports jerseys online.
+                The system enables customers to browse products, add items to the cart,
+                place orders, and make secure payments. Administrators can manage products,
+                customers, orders, and inventory efficiently.
+            </p>
+
+        </div>
+
+        <div class="feature-panel">
+
+            <h4>Core Features</h4>
+
+            <ul class="feature-list">
+
+                <li>Customer Registration and Login</li>
+
+                <li>Browse Jerseys by Team and Category</li>
+
+                <li>Shopping Cart and Order Management</li>
+
+                <li>Secure Payment System</li>
+
+                <li>Product Search and Filtering</li>
+
+                <li>Admin Dashboard for Inventory Management</li>
+
+                <li>Customer Feedback and Reports</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Project 2 -->
+    <div class="project-showcase">
+
+        <div class="project-meta">
+
+            <h3>Online Photographer Booking System</h3>
+
+            <div class="project-stack">
+                PHP / MySQL / HTML / CSS / JavaScript / Bootstrap
+            </div>
+
+            <p class="project-description">
+                A web-based platform that allows customers to search photographers,
+                view available packages, book photography services, make online
+                payments, and communicate with photographers through an integrated
+                messaging system.
+            </p>
+
+        </div>
+
+        <div class="feature-panel">
+
+            <h4>Core Features</h4>
+
+            <ul class="feature-list">
+
+                <li>Customer and Photographer Registration</li>
+
+                <li>Photographer Profile Management</li>
+
+                <li>Photography Package Management</li>
+
+                <li>Online Booking and Scheduling</li>
+
+                <li>Secure Online Payment</li>
+
+                <li>Customer–Photographer Messaging</li>
+
+                <li>Booking Reports and Dashboard</li>
+
+                <li>Admin Panel for System Management</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Clement Benny. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

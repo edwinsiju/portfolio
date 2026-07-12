@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience — Edwin Siju</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+       /* ===========================
+   EXPERIENCE PAGE
+=========================== */
+
+.experience-list{
+    max-width:900px;
+    margin:50px auto;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.experience-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+}
+
+.experience-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    background:rgba(108,99,255,.08);
+
+    border-radius:50%;
+
+    top:-80px;
+    right:-80px;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(108,99,255,.15);
+
+}
+
+.experience-year{
+
+    display:inline-block;
+
+    background:#ecebff;
+
+    color:#6c63ff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.experience-card h3{
+
+    font-size:28px;
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+.experience-card h4{
+
+    color:#666;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+.experience-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+.experience-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 28px;
+
+    background:#6c63ff;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.experience-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#574bdb;
+
+    box-shadow:0 12px 25px rgba(108,99,255,.30);
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:46px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#6c63ff;
+
+    margin:15px auto;
+
+    border-radius:20px;
+
+}
+
+/* Timeline Effect */
+
+.experience-list{
+
+    position:relative;
+
+}
+
+.experience-list::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:28px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:linear-gradient(#6c63ff,#8d86ff);
+
+    border-radius:10px;
+
+}
+
+.experience-card{
+
+    padding-left:60px;
+
+}
+
+.experience-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+
+    height:18px;
+
+    background:#6c63ff;
+
+    border:4px solid white;
+
+    border-radius:50%;
+
+    left:19px;
+
+    top:42px;
+
+    box-shadow:0 0 0 4px rgba(108,99,255,.18);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.experience-list::before{
+
+left:15px;
+
+}
+
+.experience-card{
+
+padding:25px 25px 25px 45px;
+
+}
+
+.experience-card::after{
+
+left:6px;
+
+}
+
+.section-title{
+
+font-size:36px;
+
+}
+
+.experience-card h3{
+
+font-size:24px;
+
+}
+
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Edwin Siju</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <section class="container section">
+    <h2 class="section-title">Experience & Education</h2>
+
+    <div class="experience-list">
+
+        <div class="experience-card">
+            <span class="experience-year">2025</span>
+            <h3>Angular Developer Intern</h3>
+            <h4>NeST Digital, Kakkanad</h4>
+            <p>
+                Completed a 6-month internship working with Angular, reusable
+                components, API integration, and responsive web applications.
+            </p>
+
+            <a href="nest.pdf" target="_blank" class="experience-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="experience-card">
+            <span class="experience-year">2022 – Present</span>
+            <h3>Integrated MCA</h3>
+            <h4>De Paul Institute of Science and Technology</h4>
+            <p>
+                Pursuing an Integrated Master of Computer Applications with a
+                focus on software engineering and modern web technologies.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <span class="experience-year">2020 – 2022</span>
+            <h3>Higher Secondary Education</h3>
+            <h4>De Paul English Medium Higher Secondary School</h4>
+            <p>
+                Completed higher secondary education with a science background.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <span class="experience-year">2020</span>
+            <h3>High School</h3>
+            <h4>Mar Athanasius Higher Secondary School</h4>
+            <p>
+                Completed secondary education and built a strong academic
+                foundation.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Edwin Siju. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

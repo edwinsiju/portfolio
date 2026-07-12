@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin Siju — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Hero-specific layouts styling */
+        body{
+
+background:#f5f6fa;
+font-family:'Poppins',sans-serif;
+
+}
+
+.hero{
+
+padding:100px 0;
+overflow:hidden;
+position:relative;
+
+}
+
+.hero::before{
+
+content:'';
+position:absolute;
+width:350px;
+height:350px;
+background:#6c63ff;
+filter:blur(180px);
+top:-80px;
+left:-80px;
+opacity:.3;
+
+}
+
+.hero::after{
+
+content:'';
+position:absolute;
+width:300px;
+height:300px;
+background:#ff6b81;
+filter:blur(160px);
+right:-80px;
+bottom:-50px;
+opacity:.25;
+
+}
+
+.hero-grid{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:80px;
+
+}
+
+.hero-content{
+
+flex:1;
+
+}
+
+.tag{
+
+display:inline-block;
+background:#ecebff;
+padding:8px 18px;
+border-radius:40px;
+color:#6c63ff;
+font-weight:600;
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+font-weight:800;
+margin-bottom:10px;
+
+}
+
+.hero h1 span{
+
+color:#6c63ff;
+
+}
+
+.hero h2{
+
+font-size:28px;
+margin-bottom:20px;
+font-weight:500;
+color:#555;
+
+}
+
+.hero p{
+
+font-size:18px;
+line-height:1.8;
+color:#666;
+max-width:600px;
+
+}
+
+.hero-buttons{
+
+margin-top:35px;
+display:flex;
+gap:20px;
+
+}
+
+.btn-primary{
+
+padding:15px 35px;
+background:#6c63ff;
+color:#fff;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-5px);
+box-shadow:0 12px 25px rgba(108,99,255,.3);
+
+}
+
+.btn-secondary{
+
+padding:15px 35px;
+border:2px solid #6c63ff;
+border-radius:40px;
+text-decoration:none;
+color:#6c63ff;
+font-weight:600;
+transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+background:#6c63ff;
+color:white;
+
+}
+
+.hero-image{
+
+flex:1;
+display:flex;
+justify-content:center;
+position:relative;
+
+}
+
+.image-circle{
+
+position:absolute;
+width:350px;
+height:350px;
+background:#6c63ff;
+border-radius:50%;
+filter:blur(50px);
+opacity:.15;
+
+}
+
+.hero-image img{
+
+width:360px;
+height:430px;
+object-fit:cover;
+border-radius:25px;
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+position:relative;
+transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+transform:translateY(-10px);
+
+}
+
+.social-links{
+
+margin-top:35px;
+
+}
+
+.social-links a{
+
+font-size:28px;
+margin-right:20px;
+color:#555;
+transition:.3s;
+
+}
+
+.social-links a:hover{
+
+color:#6c63ff;
+
+}
+
+@media(max-width:900px){
+
+.hero-grid{
+
+flex-direction:column-reverse;
+text-align:center;
+
+}
+
+.hero p{
+
+margin:auto;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Edwin Siju</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <p class="tag">👋 Welcome to my Portfolio</p>
+
+            <h1>
+                Hi, I'm
+                <span>Edwin Siju</span>
+            </h1>
+
+            <h2>Software Developer & MCA Student</h2>
+
+            <p>
+                I am pursuing an Integrated Master of Computer Applications (MCA)
+                at De Paul Institute of Science and Technology (DiST), Angamaly.
+                I enjoy designing modern web applications and developing smart,
+                scalable software solutions.
+            </p>
+
+           </div>
+        <div class="hero-image">
+
+            <div class="image-circle"></div>
+
+            <img src="images/edwin.jpg" alt="Edwin">
+
+        </div>
+
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Edwin Siju. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

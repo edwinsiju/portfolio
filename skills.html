@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills — Clement Benny</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ===========================
+   SKILLS PAGE
+=========================== */
+
+.skills-section{
+    max-width:900px;
+    margin:50px auto;
+    display:grid;
+    gap:30px;
+}
+
+.skill-group{
+
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    border-radius:20px;
+
+    padding:30px 35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    transition:.35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.skill-group::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    background:rgba(108,99,255,.08);
+
+    border-radius:50%;
+
+    top:-70px;
+    right:-70px;
+
+}
+
+.skill-group:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(108,99,255,.15);
+
+}
+
+.skill-group h3{
+
+    font-size:24px;
+
+    color:#222;
+
+    margin-bottom:20px;
+
+    position:relative;
+
+}
+
+.skill-group h3::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:4px;
+
+    background:#6c63ff;
+
+    border-radius:10px;
+
+    margin-top:8px;
+
+}
+
+.skill-group p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:46px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:#6c63ff;
+
+    margin:15px auto;
+
+    border-radius:20px;
+
+}
+
+@media(max-width:768px){
+
+.skill-group{
+
+padding:25px;
+
+}
+
+.section-title{
+
+font-size:36px;
+
+}
+
+.skill-group h3{
+
+font-size:22px;
+
+}
+
+.skill-group p{
+
+font-size:16px;
+
+}
+
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Edwin Siju</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+    <section class="container section">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-section">
+
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <p>PHP • TypeScript • JavaScript • Java • C • C++ • Python • SQL • HTML5 • CSS3</p>
+            </div>
+
+            <div class="skill-group">
+                <h3>Frameworks & Technologies</h3>
+                <p>Angular • Laravel • ASP.NET • Node.js • Express.js • REST APIs</p>
+            </div>
+
+            <div class="skill-group">
+                <h3>Frontend</h3>
+                <p>HTML5 • CSS3 • Bootstrap • Tailwind CSS • Responsive Web Design</p>
+            </div>
+
+            <div class="skill-group">
+                <h3>Database & Tools</h3>
+                <p>MySQL • Git • GitHub • VS Code • Postman</p>
+            </div>
+
+            <div class="skill-group">
+                <h3>Soft Skills</h3>
+                <p>Problem Solving • Teamwork • Communication • Adaptability • Time Management</p>
+            </div>
+
+        </div>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Clement Benny. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

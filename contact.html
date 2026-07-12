@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Edwin Siju</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+    background: linear-gradient(135deg, #f8f9fc 0%, #eef2ff 50%, #ffffff 100%);
+}
+
+.contact-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-tag{
+    color:#8b5cf6;
+    font-weight:600;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.contact-header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.contact-header p{
+    color:#777;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:40px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.info-card{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    background:white;
+    padding:22px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.icon{
+    width:60px;
+    height:60px;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+}
+
+.info-card h3{
+    margin-bottom:6px;
+}
+
+.info-card a{
+    color:#555;
+    text-decoration:none;
+}
+
+.info-card p{
+    color:#666;
+}
+
+.contact-form-card{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    
+}
+
+.contact-form-card h2{
+    margin-bottom:30px;
+}
+
+.contact-form-card form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.contact-form-card input,
+.contact-form-card textarea{
+    padding:16px 20px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus{
+    border-color:#6a11cb;
+    box-shadow:0 0 0 4px rgba(106,17,203,.12);
+}
+
+.contact-form-card button{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    border:none;
+    padding:18px;
+    font-size:16px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form-card button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(37,117,252,.35);
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.contact-header h1{
+font-size:2.3rem;
+}
+
+.contact-form-card{
+padding:30px;
+}
+
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Edwin Siju</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <main>
+<section class="contact-section">
+
+    <div class="contact-header">
+        <p class="section-tag">CONTACT</p>
+        <h1>Let's Build Something Amazing.</h1>
+        <p>
+            I'm always open to discussing projects, internships,
+            collaborations, or simply having a conversation about technology.
+        </p>
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- Left Side -->
+        <div class="contact-info">
+
+            <div class="info-card">
+                <div class="icon">✉️</div>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:edwindepaul@depaul.edu.in">
+                        edwindepaul@depaul.edu.in
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">📞</div>
+                <div>
+                    <h3>Phone</h3>
+                    <a href="tel:+919061448251">
+                        +91 90614 48251
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">💼</div>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/edwin-thommi-a6ba493b6" target="_blank">
+                        linkedin.com/in/edwinthommi
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">💻</div>
+                <div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/edwinsiju" target="_blank">
+                        github.com/edwinsiju
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">📍</div>
+                <div>
+                    <h3>Location</h3>
+                    <p>Angamaly, Kochi, Kerala</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="contact-form-card">
+
+            <h2>Send a Message</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                >
+
+                <textarea
+                    rows="6"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Edwin Siju. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
